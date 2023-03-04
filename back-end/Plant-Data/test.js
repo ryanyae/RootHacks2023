@@ -43,7 +43,7 @@ function calcTrueK(name, days){
         kval = kinfo.Kini
     }
     else if(days>inidays && days<=inidays+devdays){
-        kval = kinfo.Kini - kinfo.Kmid
+        kval = abs(kinfo.Kini - kinfo.Kmid)
     }
     else if(days>inidays+devdays && days<=inidays+devdays+middays){
         kval = kinfo.Kmid
