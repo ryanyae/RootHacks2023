@@ -4,6 +4,8 @@ const port = 8888;
 const fs = require("fs");
 app.use(express.json());
 
+app.use("/css", express.static("../front-end/public/css"));
+
 app.get('/', (req, res) => {
   res.send(fs.readFileSync("../front-end/public/index.html", "utf8"));
 });
