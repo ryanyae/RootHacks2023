@@ -24,7 +24,6 @@ export const Home = () => {
           <PlantInfo />
         </Stack>
         <Stack>{/* <WeatherData /> */}</Stack>
-        {/* <Box sx={{ minWidth: "1500px", minHeight: "1500px" }}></Box> */}
       </MainContainer>
     </Stack>
   );
