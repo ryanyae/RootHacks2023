@@ -1,6 +1,6 @@
 
 const {getCurrentWeather} = require("../Weather/WeatherAPI.js")
-const {search} = require("../Plant-Data/test")
+const {calcTrueK} = require("../Plant-Data/test")
 
 
 module.exports = {
@@ -11,10 +11,8 @@ module.exports = {
         // console.log(value)
         // res.status(200).json({ title: "hello"})
 
-
         var weatherData = await getCurrentWeather();
-        console.log(weatherData)
-
+        var trueK = calcTrueK("Pineapple", 61);
+        console.log(trueK)
     }
-
 }
