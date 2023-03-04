@@ -24,7 +24,7 @@ export const Home = () => {
   const apiCall = async () => {
     const value = await axios.get("http://localhost:8888/router/calculate")
     
-    console.log(value)
+    // console.log(value)
   }
 
   return (
