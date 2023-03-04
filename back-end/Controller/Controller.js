@@ -12,7 +12,7 @@ module.exports = {
         // res.status(200).json({ title: "hello"})
 
         var weatherData = await getCurrentWeather();
-        var trueK = calcTrueK("Pineapple", 61);
+        var trueK = calcTrueK("Zucchini", 10);
         console.log(trueK)
     }
 }

@@ -44,19 +44,19 @@ function calcTrueK(name, days){
     }
     else if(days>inidays && days<=inidays+devdays){
 
-        kval = abs(kinfo.Kini - kinfo.Kmid)
+        kval = Math.abs(kinfo.Kini - kinfo.Kmid)
 
     }
     else if(days>inidays+devdays && days<=inidays+devdays+middays){
         kval = kinfo.Kmid
     }
     else if(days>inidays+devdays+middays && days<=inidays+devdays+middays+latedays){
-        kval = abs(kinfo.Kmid - kinfo.Kend)
+        kval = Math.abs(kinfo.Kmid - kinfo.Kend)
     }
     else{
         kval = 404
     }
-    return kval
+    return {kval:kval, ginfo:ginfo }
 
 }
 
