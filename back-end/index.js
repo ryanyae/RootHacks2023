@@ -3,16 +3,19 @@ const app = express();
 const cors = require('cors');
 const port = 8888;
 const fs = require("fs");
-app.use(express.json());
 
-app.use("/css", express.static("../front-end/public/css"));
 
 app.use(cors({origin: 'http://localhost:3000', credentials: true}));
+app.use(express.json());
 
-app.get('/', (req, res) => {
-  res.send(fs.readFileSync("../front-end/public/index.html", "utf8"));
-});
+const router = require("./Router/Router");
+app.use("/router", router)
+
+
+// app.get('/', (req, res) => {
+//   res.send(fs.readFileSync("../front-end/public/index.html", "utf8"));
+// });
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+  console.log(`listening at http://localhost:${port}`);
 });
