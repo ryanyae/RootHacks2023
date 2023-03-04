@@ -1,533 +1,586 @@
 [
     {
      "Crop": "a. Small Vegetables",
-     "Column3": 0.7,
+     "Kc ini": 0.7,
      "Kc mid": 1.05,
      "Kc end": 0.95
     },
     {
      "Crop": "Broccoli",
+     "Kc ini": 0.7,
      "Kc mid": 1.05,
      "Kc end": 0.95,
      "Maximum Crop Height (h) (m)": 0.3
     },
     {
      "Crop": "Brussel Sprouts",
+     "Kc ini": 0.7,
      "Kc mid": 1.05,
      "Kc end": 0.95,
      "Maximum Crop Height (h) (m)": 0.4
     },
     {
      "Crop": "Cabbage",
+     "Kc ini": 0.7,
      "Kc mid": 1.05,
      "Kc end": 0.95,
      "Maximum Crop Height (h) (m)": 0.4
     },
     {
      "Crop": "Carrots",
+     "Kc ini": 0.7,
      "Kc mid": 1.05,
      "Kc end": 0.95,
      "Maximum Crop Height (h) (m)": 0.3
     },
     {
      "Crop": "Cauliflower",
+     "Kc ini": 0.7,
      "Kc mid": 1.05,
      "Kc end": 0.95,
      "Maximum Crop Height (h) (m)": 0.4
     },
     {
      "Crop": "Celery",
+     "Kc ini": 0.7,
      "Kc mid": 1.05,
      "Kc end": 1,
      "Maximum Crop Height (h) (m)": 0.6
     },
     {
      "Crop": "Garlic",
+     "Kc ini": 0.7,
      "Kc mid": 1,
      "Kc end": 0.7,
      "Maximum Crop Height (h) (m)": 0.3
     },
     {
      "Crop": "Lettuce",
+     "Kc ini": 0.7,
      "Kc mid": 1,
      "Kc end": 0.95,
      "Maximum Crop Height (h) (m)": 0.3
     },
     {
-     "Crop": "Onions"
+     "Crop": "Onions",
+     "Kc ini": 0.7
     },
     {
      "Column2": "- dry",
+     "Kc ini": 0.7,
      "Kc mid": 1.05,
      "Kc end": 0.75,
      "Maximum Crop Height (h) (m)": 0.4
     },
     {
      "Column2": "- green",
+     "Kc ini": 0.7,
      "Kc mid": 1,
      "Kc end": 1,
      "Maximum Crop Height (h) (m)": 0.3
     },
     {
      "Column2": "- seed",
+     "Kc ini": 0.7,
      "Kc mid": 1.05,
      "Kc end": 0.8,
      "Maximum Crop Height (h) (m)": 0.5
     },
     {
      "Crop": "Spinach",
+     "Kc ini": 0.7,
      "Kc mid": 1,
      "Kc end": 0.95,
      "Maximum Crop Height (h) (m)": 0.3
     },
     {
      "Crop": "Radish",
+     "Kc ini": 0.7,
      "Kc mid": 0.9,
      "Kc end": 0.85,
      "Maximum Crop Height (h) (m)": 0.3
     },
     {
      "Crop": "b. Vegetables - Solanum Family&nbsp;(Solanaceae)",
-     "Column3": 0.6,
+     "Kc ini": 0.6,
      "Kc mid": 1.15,
      "Kc end": 0.8
     },
     {
      "Crop": "Egg Plant",
+     "Kc ini": 0.6,
      "Kc mid": 1.05,
      "Kc end": 0.9,
      "Maximum Crop Height (h) (m)": 0.8
     },
     {
      "Crop": "Sweet Peppers (bell)",
+     "Kc ini": 0.6,
      "Kc mid": 1.052,
      "Kc end": 0.9,
      "Maximum Crop Height (h) (m)": 0.7
     },
     {
      "Crop": "Tomato",
+     "Kc ini": 0.6,
      "Kc mid": 1.152,
      "Kc end": "0.70-0.90",
      "Maximum Crop Height (h) (m)": 0.6
     },
     {
      "Crop": "c. Vegetables - Cucumber Family&nbsp;(Cucurbitaceae)",
-     "Column3": 0.5,
+     "Kc ini": 0.6,
      "Kc mid": 1,
      "Kc end": 0.8
     },
     {
      "Crop": "Cantaloupe",
-     "Column3": 0.5,
      "Kc mid": 0.85,
      "Kc end": 0.6,
      "Maximum Crop Height (h) (m)": 0.3
     },
     {
-     "Crop": "Cucumber"
+     "Crop": "Cucumber",
+     "Kc ini": 0.6
     },
     {
      "Column2": "- Fresh Market",
-     "Column3": 0.6,
+     "Kc ini": 0.6,
      "Kc mid": 1.002,
      "Kc end": 0.75,
      "Maximum Crop Height (h) (m)": 0.3
     },
     {
      "Column2": "- Machine harvest",
-     "Column3": 0.5,
+     "Kc ini": 0.6,
      "Kc mid": 1,
      "Kc end": 0.9,
      "Maximum Crop Height (h) (m)": 0.3
     },
     {
      "Crop": "Pumpkin, Winter Squash",
+     "Kc ini": 0.6,
      "Kc mid": 1,
      "Kc end": 0.8,
      "Maximum Crop Height (h) (m)": 0.4
     },
     {
      "Crop": "Squash, Zucchini",
+     "Kc ini": 0.6,
      "Kc mid": 0.95,
      "Kc end": 0.75,
      "Maximum Crop Height (h) (m)": 0.3
     },
     {
      "Crop": "Sweet Melons",
+     "Kc ini": 0.6,
      "Kc mid": 1.05,
      "Kc end": 0.75,
      "Maximum Crop Height (h) (m)": 0.4
     },
     {
      "Crop": "Watermelon",
-     "Column3": 0.4,
+     "Kc ini": 0.5,
      "Kc mid": 1,
      "Kc end": 0.75,
      "Maximum Crop Height (h) (m)": 0.4
     },
     {
      "Crop": "d. Roots and Tubers",
-     "Column3": 0.5,
+     "Kc ini": 0.5,
      "Kc mid": 1.1,
      "Kc end": 0.95
     },
     {
      "Crop": "Beets, table",
+     "Kc ini": 0.5,
      "Kc mid": 1.05,
      "Kc end": 0.95,
      "Maximum Crop Height (h) (m)": 0.4
     },
     {
-     "Crop": "Cassava"
+     "Crop": "Cassava",
+     "Kc ini": 0.6
     },
     {
      "Column2": "- year 1",
-     "Column3": "0.3",
+     "Kc ini": 0.5,
      "Kc mid": 0.803,
      "Kc end": 0.3,
      "Maximum Crop Height (h) (m)": 1
     },
     {
      "Column2": "- year 2",
-     "Column3": "0.3",
+     "Kc ini": 0.5,
      "Kc mid": 1.1,
      "Kc end": 0.5,
      "Maximum Crop Height (h) (m)": 1.5
     },
     {
      "Crop": "Parsnip",
-     "Column3": 0.5,
+     "Kc ini": 0.5,
      "Kc mid": 1.05,
      "Kc end": 0.95,
      "Maximum Crop Height (h) (m)": 0.4
     },
     {
      "Crop": "Potato",
+     "Kc ini": 0.5,
      "Kc mid": 1.15,
      "Kc end": 0.754,
      "Maximum Crop Height (h) (m)": 0.6
     },
     {
      "Crop": "Sweet Potato",
+     "Kc ini": 0.4,
      "Kc mid": 1.15,
      "Kc end": 0.65,
      "Maximum Crop Height (h) (m)": 0.4
     },
     {
      "Crop": "Turnip (and Rutabaga)",
+     "Kc ini": 0.5,
      "Kc mid": 1.1,
      "Kc end": 0.95,
      "Maximum Crop Height (h) (m)": 0.6
     },
     {
      "Crop": "Sugar Beet",
-     "Column3": 0.35,
      "Kc mid": 1.2,
      "Kc end": 0.705,
      "Maximum Crop Height (h) (m)": 0.5
     },
     {
      "Crop": "e. Legumes&nbsp;(Leguminosae)",
-     "Column3": 0.4,
+     "Kc ini": "0.3",
      "Kc mid": 1.15,
      "Kc end": 0.55
     },
     {
      "Crop": "Beans, green",
-     "Column3": 0.5,
+     "Kc ini": "0.3",
      "Kc mid": 1.052,
      "Kc end": 0.9,
      "Maximum Crop Height (h) (m)": 0.4
     },
     {
      "Crop": "Beans, dry and Pulses",
-     "Column3": 0.4,
+     "Kc ini": "0.3",
      "Kc mid": 1.152,
      "Kc end": 0.35,
      "Maximum Crop Height (h) (m)": 0.4
     },
     {
      "Crop": "Chick pea",
+     "Kc ini": 0.5,
      "Kc mid": 1,
      "Kc end": 0.35,
      "Maximum Crop Height (h) (m)": 0.4
     },
     {
-     "Crop": "Fababean (broad bean)"
+     "Crop": "Fababean (broad bean)",
+     "Kc ini": "0.3"
     },
     {
      "Column2": "- Fresh",
-     "Column3": 0.5,
+     "Kc ini": "0.3",
      "Kc mid": 1.152,
      "Kc end": 1.1,
      "Maximum Crop Height (h) (m)": 0.8
     },
     {
      "Column2": "- Dry\/Seed",
-     "Column3": 0.5,
+     "Kc ini": "0.3",
      "Kc mid": 1.152,
      "Kc end": 0.3,
      "Maximum Crop Height (h) (m)": 0.8
     },
     {
      "Crop": "Grabanzo",
-     "Column3": 0.4,
+     "Kc ini": 0.35,
      "Kc mid": 1.15,
      "Kc end": 0.35,
      "Maximum Crop Height (h) (m)": 0.8
     },
     {
      "Crop": "Green Gram and Cowpeas",
+     "Kc ini": 0.4,
      "Kc mid": 1.05,
      "Kc end": "0.60-0.356",
      "Maximum Crop Height (h) (m)": 0.4
     },
     {
      "Crop": "Groundnut (Peanut)",
+     "Kc ini": 0.5,
      "Kc mid": 1.15,
      "Kc end": 0.6,
      "Maximum Crop Height (h) (m)": 0.4
     },
     {
      "Crop": "Lentil",
+     "Kc ini": 0.4,
      "Kc mid": 1.1,
      "Kc end": 0.3,
      "Maximum Crop Height (h) (m)": 0.5
     },
     {
-     "Crop": "Peas"
+     "Crop": "Peas",
+     "Kc ini": 0.4
     },
     {
      "Column2": "- Fresh",
-     "Column3": 0.5,
+     "Kc ini": 0.4,
      "Kc mid": 1.152,
      "Kc end": 1.1,
      "Maximum Crop Height (h) (m)": 0.5
     },
     {
      "Column2": "- Dry\/Seed",
+     "Kc ini": 0.5,
      "Kc mid": 1.15,
      "Kc end": 0.3,
      "Maximum Crop Height (h) (m)": 0.5
     },
     {
      "Crop": "Soybeans",
+     "Kc ini": 0.5,
      "Kc mid": 1.15,
      "Kc end": 0.5,
      "Maximum Crop Height (h) (m)": "0.5-1.0"
     },
     {
      "Crop": "f. Perennial Vegetables (with winter dormancy and initially bare or mulched soil)",
-     "Column3": 0.5,
+     "Kc ini": 0.4,
      "Kc mid": 1,
      "Kc end": 0.8
     },
     {
      "Crop": "Artichokes",
-     "Column3": 0.5,
+     "Kc ini": 0.4,
      "Kc mid": 1,
      "Kc end": 0.95,
      "Maximum Crop Height (h) (m)": 0.7
     },
     {
      "Crop": "Asparagus",
-     "Column3": 0.5,
+     "Kc ini": 0.4,
      "Kc mid": 0.957,
      "Kc end": 0.3,
      "Maximum Crop Height (h) (m)": "0.2-0.8"
     },
     {
      "Crop": "Mint",
-     "Column3": 0.6,
+     "Kc ini": 0.4,
      "Kc mid": 1.15,
      "Kc end": 1.1,
      "Maximum Crop Height (h) (m)": "0.6-0.8"
     },
     {
      "Crop": "Strawberries",
-     "Column3": 0.4,
+     "Kc ini": 0.4,
      "Kc mid": 0.85,
      "Kc end": 0.75,
      "Maximum Crop Height (h) (m)": 0.2
     },
     {
      "Crop": "g. Fibre Crops",
-     "Column3": 0.35
+     "Kc ini": 0.5
     },
     {
      "Crop": "Cotton",
+     "Kc ini": 0.5,
      "Kc mid": "1.15-1.20",
      "Kc end": "0.70-0.50",
      "Maximum Crop Height (h) (m)": "1.2-1.5"
     },
     {
      "Crop": "Flax",
+     "Kc ini": 0.5,
      "Kc mid": 1.1,
      "Kc end": 0.25,
      "Maximum Crop Height (h) (m)": 1.2
     },
     {
      "Crop": "Sisal&nbsp;8",
+     "Kc ini": 0.5,
      "Kc mid": "0.4-0.7",
      "Kc end": "0.4-0.7",
      "Maximum Crop Height (h) (m)": 1.5
     },
     {
      "Crop": "h. Oil Crops",
-     "Column3": 0.35,
+     "Kc ini": 0.5,
      "Kc mid": 1.15,
      "Kc end": 0.35
     },
     {
      "Crop": "Castorbean (Ricinus)",
+     "Kc ini": 0.5,
      "Kc mid": 1.15,
      "Kc end": 0.55,
      "Maximum Crop Height (h) (m)": 0.3
     },
     {
      "Crop": "Rapeseed, Canola",
+     "Kc ini": 0.6,
      "Kc mid": "1.0-1.159",
      "Kc end": 0.35,
      "Maximum Crop Height (h) (m)": 0.6
     },
     {
      "Crop": "Safflower",
+     "Kc ini": 0.4,
      "Kc mid": "1.0-1.159",
      "Kc end": 0.25,
      "Maximum Crop Height (h) (m)": 0.8
     },
     {
      "Crop": "Sesame",
+     "Kc ini": 0.35,
      "Kc mid": 1.1,
      "Kc end": 0.25,
      "Maximum Crop Height (h) (m)": 1
     },
     {
      "Crop": "Sunflower",
+     "Kc ini": 0.35,
      "Kc mid": "1.0-1.159",
      "Kc end": 0.35,
      "Maximum Crop Height (h) (m)": 2
     },
     {
      "Crop": "i. Cereals",
-     "Column3": 0.3,
+     "Kc ini": 0.35,
      "Kc mid": 1.15,
      "Kc end": 0.4
     },
     {
      "Crop": "Barley",
+     "Kc ini": 0.35,
      "Kc mid": 1.15,
      "Kc end": 0.25,
      "Maximum Crop Height (h) (m)": 1
     },
     {
      "Crop": "Oats",
+     "Kc ini": 0.35,
      "Kc mid": 1.15,
      "Kc end": 0.25,
      "Maximum Crop Height (h) (m)": 1
     },
     {
      "Crop": "Spring Wheat",
+     "Kc ini": 0.35,
      "Kc mid": 1.15,
      "Kc end": "0.25-0.410",
      "Maximum Crop Height (h) (m)": 1
     },
     {
-     "Crop": "Winter Wheat"
+     "Crop": "Winter Wheat",
+     "Kc ini": 0.35
     },
     {
      "Column2": "- with frozen soils",
-     "Column3": 0.4,
+     "Kc ini": 0.35,
      "Kc mid": 1.15,
      "Kc end": "0.25-0.410",
      "Maximum Crop Height (h) (m)": 1
     },
     {
      "Column2": "- with non-frozen soils",
-     "Column3": 0.7,
+     "Kc ini": 0.35,
      "Kc mid": 1.15,
      "Kc end": "0.25-0.410"
     },
     {
      "Crop": "Maize, Field (grain)&nbsp;(field corn)",
+     "Kc ini": 0.35,
      "Kc mid": 1.2,
      "Kc end": "0.60-0.3511",
      "Maximum Crop Height (h) (m)": 2
     },
     {
      "Crop": "Maize, Sweet&nbsp;(sweet corn)",
+     "Kc ini": 0.3,
      "Kc mid": 1.15,
      "Kc end": 1.0512,
      "Maximum Crop Height (h) (m)": 1.5
     },
     {
      "Crop": "Millet",
+     "Kc ini": 0.3,
      "Kc mid": 1,
      "Kc end": 0.3,
      "Maximum Crop Height (h) (m)": 1.5
     },
     {
-     "Crop": "Sorghum"
+     "Crop": "Sorghum",
+     "Kc ini": 0.3
     },
     {
      "Column2": "- grain",
+     "Kc ini": 0.3,
      "Kc mid": "1.00-1.10",
      "Kc end": 0.55,
      "Maximum Crop Height (h) (m)": "02-Jan"
     },
     {
      "Column2": "- sweet",
+     "Kc ini": 0.3,
      "Kc mid": 1.2,
      "Kc end": 1.05,
      "Maximum Crop Height (h) (m)": "04-Feb"
     },
     {
      "Crop": "Rice",
-     "Column3": 1.05,
+     "Kc ini": 0.4,
      "Kc mid": 1.2,
      "Kc end": "0.90-0.60",
      "Maximum Crop Height (h) (m)": 1
     },
     {
-     "Crop": "j. Forages"
+     "Crop": "j. Forages",
+     "Kc ini": 0.7
     },
     {
-     "Crop": "Alfalfa Hay"
+     "Crop": "Alfalfa Hay",
+     "Kc ini": 0.7
     },
     {
      "Column2": "- averaged cutting effects",
-     "Column3": 0.4,
+     "Kc ini": 0.7,
      "Kc mid": 0.9513,
      "Kc end": 0.9,
      "Maximum Crop Height (h) (m)": 0.7
     },
     {
      "Column2": "- individual cutting periods",
-     "Column3": 0.4014,
+     "Kc ini": 0.7,
      "Kc mid": 1.2014,
      "Kc end": 1.1514,
      "Maximum Crop Height (h) (m)": 0.7
     },
     {
      "Column2": "- for seed",
-     "Column3": 0.4,
+     "Kc ini": 0.7,
      "Kc mid": 0.5,
      "Kc end": 0.5,
      "Maximum Crop Height (h) (m)": 0.7
     },
     {
-     "Crop": "Bermuda hay"
+     "Crop": "Bermuda hay",
+     "Kc ini": 0.7
     },
     {
      "Column2": "- averaged cutting effects",
-     "Column3": 0.55,
+     "Kc ini": 0.7,
      "Kc mid": 1.0013,
      "Kc end": 0.85,
      "Maximum Crop Height (h) (m)": 0.35
     },
     {
      "Column2": "- Spring crop for seed",
-     "Column3": 0.35,
+     "Kc ini": 1.05,
      "Kc mid": 0.9,
      "Kc end": 0.65,
      "Maximum Crop Height (h) (m)": 0.4
@@ -537,24 +590,25 @@
     },
     {
      "Column2": "- averaged cutting effects",
-     "Column3": 0.4,
+     "Kc ini": 1.05,
      "Kc mid": 0.9013,
      "Kc end": 0.85,
      "Maximum Crop Height (h) (m)": 0.6
     },
     {
      "Column2": "- individual cutting periods",
-     "Column3": 0.4014,
+     "Kc ini": 0.4,
      "Kc mid": 1.1514,
      "Kc end": 1.1014,
      "Maximum Crop Height (h) (m)": 0.6
     },
     {
-     "Crop": "Rye Grass hay"
+     "Crop": "Rye Grass hay",
+     "Kc ini": 0.4014
     },
     {
      "Column2": "- averaged cutting effects",
-     "Column3": 0.95,
+     "Kc ini": 0.4,
      "Kc mid": 1.05,
      "Kc end": 1,
      "Maximum Crop Height (h) (m)": 0.3
@@ -564,14 +618,14 @@
     },
     {
      "Column2": "- averaged cutting effects",
-     "Column3": 0.5,
+     "Kc ini": 0.55,
      "Kc mid": 0.9014,
      "Kc end": 0.85,
      "Maximum Crop Height (h) (m)": 1.2
     },
     {
      "Column2": "- individual cutting periods",
-     "Column3": 0.5014,
+     "Kc ini": 0.35,
      "Kc mid": 1.1514,
      "Kc end": 1.1014,
      "Maximum Crop Height (h) (m)": 1.2
@@ -581,14 +635,14 @@
     },
     {
      "Column2": "- Rotated Grazing",
-     "Column3": 0.4,
+     "Kc ini": 0.4,
      "Kc mid": "0.85-1.05",
      "Kc end": 0.85,
      "Maximum Crop Height (h) (m)": "0.15-0.30"
     },
     {
      "Column2": "- Extensive Grazing",
-     "Column3": 0.3,
+     "Kc ini": 0.4014,
      "Kc mid": 0.75,
      "Kc end": 0.75,
      "Maximum Crop Height (h) (m)": 0.1
@@ -598,164 +652,164 @@
     },
     {
      "Column2": "- cool season&nbsp;15",
-     "Column3": "0.90",
+     "Kc ini": 0.95,
      "Kc mid": 0.95,
      "Kc end": 0.95,
      "Maximum Crop Height (h) (m)": 0.1
     },
     {
      "Column2": "- warm season&nbsp;15",
-     "Column3": "0.80",
      "Kc mid": 0.85,
      "Kc end": 0.85,
      "Maximum Crop Height (h) (m)": 0.1
     },
     {
      "Crop": "k. Sugar Cane",
-     "Column3": 0.4,
+     "Kc ini": 0.5,
      "Kc mid": 1.25,
      "Kc end": 0.75,
      "Maximum Crop Height (h) (m)": 3
     },
     {
-     "Crop": "l. Tropical Fruits and Trees"
+     "Crop": "l. Tropical Fruits and Trees",
+     "Kc ini": 0.5014
     },
     {
      "Crop": "Banana"
     },
     {
      "Column2": "- 1st&nbsp;year",
-     "Column3": 0.5,
+     "Kc ini": 0.4,
      "Kc mid": 1.1,
      "Kc end": 1,
      "Maximum Crop Height (h) (m)": 3
     },
     {
      "Column2": "- 2nd&nbsp;year",
-     "Column3": 1,
+     "Kc ini": 0.3,
      "Kc mid": 1.2,
      "Kc end": 1.1,
      "Maximum Crop Height (h) (m)": 4
     },
     {
      "Crop": "Cacao",
-     "Column3": 1,
      "Kc mid": 1.05,
      "Kc end": 1.05,
      "Maximum Crop Height (h) (m)": 3
     },
     {
-     "Crop": "Coffee"
+     "Crop": "Coffee",
+     "Kc ini": "0.90"
     },
     {
      "Column2": "- bare ground cover",
-     "Column3": 0.9,
+     "Kc ini": "0.80",
      "Kc mid": 0.95,
      "Kc end": 0.95,
      "Maximum Crop Height (h) (m)": "03-Feb"
     },
     {
      "Column2": "- with weeds",
-     "Column3": 1.05,
+     "Kc ini": 0.4,
      "Kc mid": 1.1,
      "Kc end": 1.1,
      "Maximum Crop Height (h) (m)": "03-Feb"
     },
     {
      "Crop": "Date Palms",
-     "Column3": 0.9,
      "Kc mid": 0.95,
      "Kc end": 0.95,
      "Maximum Crop Height (h) (m)": 8
     },
     {
      "Crop": "Palm Trees",
-     "Column3": 0.95,
      "Kc mid": 1,
      "Kc end": 1,
      "Maximum Crop Height (h) (m)": 8
     },
     {
-     "Crop": "Pineapple&nbsp;16"
+     "Crop": "Pineapple&nbsp;16",
+     "Kc ini": 0.5
     },
     {
      "Column2": "- bare soil",
-     "Column3": 0.5,
+     "Kc ini": 1,
      "Kc mid": 0.3,
      "Kc end": 0.3,
      "Maximum Crop Height (h) (m)": "0.6-1.2"
     },
     {
      "Column2": "- with grass cover",
-     "Column3": 0.5,
+     "Kc ini": 1,
      "Kc mid": 0.5,
      "Kc end": 0.5,
      "Maximum Crop Height (h) (m)": "0.6-1.2"
     },
     {
      "Crop": "Rubber Trees",
-     "Column3": 0.95,
      "Kc mid": 1,
      "Kc end": 1,
      "Maximum Crop Height (h) (m)": 10
     },
     {
-     "Crop": "Tea"
+     "Crop": "Tea",
+     "Kc ini": 0.9
     },
     {
      "Column2": "- non-shaded",
-     "Column3": 0.95,
+     "Kc ini": 1.05,
      "Kc mid": 1,
      "Kc end": 1,
      "Maximum Crop Height (h) (m)": 1.5
     },
     {
      "Column2": "- shaded&nbsp;17",
-     "Column3": "1.10",
+     "Kc ini": 0.9,
      "Kc mid": 1.15,
      "Kc end": 1.15,
      "Maximum Crop Height (h) (m)": 2
     },
     {
-     "Crop": "m. Grapes and Berries"
+     "Crop": "m. Grapes and Berries",
+     "Kc ini": 0.95
     },
     {
      "Crop": "Berries (bushes)",
-     "Column3": 0.3,
      "Kc mid": 1.05,
      "Kc end": 0.5,
      "Maximum Crop Height (h) (m)": 1.5
     },
     {
-     "Crop": "Grapes"
+     "Crop": "Grapes",
+     "Kc ini": 0.5
     },
     {
      "Column2": "- Table or Raisin",
-     "Column3": 0.3,
+     "Kc ini": 0.5,
      "Kc mid": 0.85,
      "Kc end": 0.45,
      "Maximum Crop Height (h) (m)": 2
     },
     {
      "Column2": "- Wine",
-     "Column3": 0.3,
+     "Kc ini": 0.95,
      "Kc mid": 0.7,
      "Kc end": 0.45,
      "Maximum Crop Height (h) (m)": "1.5-2"
     },
     {
      "Crop": "Hops",
-     "Column3": 0.3,
      "Kc mid": 1.05,
      "Kc end": 0.85,
      "Maximum Crop Height (h) (m)": 5
     },
     {
-     "Crop": "n. Fruit Trees"
+     "Crop": "n. Fruit Trees",
+     "Kc ini": 0.95
     },
     {
      "Crop": "Almonds, no ground cover",
-     "Column3": 0.4,
+     "Kc ini": "1.10",
      "Kc mid": 0.9,
      "Kc end": 0.6518,
      "Maximum Crop Height (h) (m)": 5
@@ -765,196 +819,198 @@
     },
     {
      "Column2": "- no ground cover, killing frost",
-     "Column3": 0.45,
+     "Kc ini": 0.3,
      "Kc mid": 0.95,
      "Kc end": 0.7018,
      "Maximum Crop Height (h) (m)": 4
     },
     {
      "Column2": "- no ground cover, no frosts",
-     "Column3": 0.6,
      "Kc mid": 0.95,
      "Kc end": 0.7518,
      "Maximum Crop Height (h) (m)": 4
     },
     {
      "Column2": "- active ground cover, killing frost",
-     "Column3": 0.5,
+     "Kc ini": 0.3,
      "Kc mid": 1.2,
      "Kc end": 0.9518,
      "Maximum Crop Height (h) (m)": 4
     },
     {
      "Column2": "- active ground cover, no frosts",
-     "Column3": 0.8,
+     "Kc ini": 0.3,
      "Kc mid": 1.2,
      "Kc end": 0.8518,
      "Maximum Crop Height (h) (m)": 4
     },
     {
-     "Crop": "Apricots, Peaches, Stone Fruit&nbsp;19, 20"
+     "Crop": "Apricots, Peaches, Stone Fruit&nbsp;19, 20",
+     "Kc ini": 0.3
     },
     {
      "Column2": "- no ground cover, killing frost",
-     "Column3": 0.45,
+     "Kc ini": 0.3,
      "Kc mid": 0.9,
      "Kc end": 0.6518,
      "Maximum Crop Height (h) (m)": 3
     },
     {
      "Column2": "- no ground cover, no frosts",
-     "Column3": 0.55,
+     "Kc ini": 0.4,
      "Kc mid": 0.9,
      "Kc end": 0.6518,
      "Maximum Crop Height (h) (m)": 3
     },
     {
      "Column2": "- active ground cover, killing frost",
-     "Column3": 0.5,
+     "Kc ini": 0.4,
      "Kc mid": 1.15,
      "Kc end": 0.9018,
      "Maximum Crop Height (h) (m)": 3
     },
     {
      "Column2": "- active ground cover, no frosts",
-     "Column3": 0.8,
+     "Kc ini": 0.45,
      "Kc mid": 1.15,
      "Kc end": 0.8518,
      "Maximum Crop Height (h) (m)": 3
     },
     {
      "Crop": "Avocado, no ground cover",
-     "Column3": 0.6,
+     "Kc ini": 0.6,
      "Kc mid": 0.85,
      "Kc end": 0.75,
      "Maximum Crop Height (h) (m)": 3
     },
     {
-     "Crop": "Citrus, no ground cover&nbsp;21"
+     "Crop": "Citrus, no ground cover&nbsp;21",
+     "Kc ini": 0.5
     },
     {
      "Column2": "- 70% canopy",
-     "Column3": "0.70",
+     "Kc ini": 0.8,
      "Kc mid": 0.65,
      "Kc end": 0.7,
      "Maximum Crop Height (h) (m)": 4
     },
     {
      "Column2": "- 50% canopy",
-     "Column3": "0.65",
      "Kc mid": 0.6,
      "Kc end": 0.65,
      "Maximum Crop Height (h) (m)": 3
     },
     {
      "Column2": "- 20% canopy",
-     "Column3": "0.50",
+     "Kc ini": 0.45,
      "Kc mid": 0.45,
      "Kc end": 0.55,
      "Maximum Crop Height (h) (m)": 2
     },
     {
-     "Crop": "Citrus, with active ground cover or weeds&nbsp;22"
+     "Crop": "Citrus, with active ground cover or weeds&nbsp;22",
+     "Kc ini": 0.55
     },
     {
      "Column2": "- 70% canopy",
-     "Column3": "0.75",
+     "Kc ini": 0.5,
      "Kc mid": 0.7,
      "Kc end": 0.75,
      "Maximum Crop Height (h) (m)": 4
     },
     {
      "Column2": "- 50% canopy",
-     "Column3": "0.80",
+     "Kc ini": 0.8,
      "Kc mid": 0.8,
      "Kc end": 0.8,
      "Maximum Crop Height (h) (m)": 3
     },
     {
      "Column2": "- 20% canopy",
-     "Column3": "0.85",
+     "Kc ini": 0.6,
      "Kc mid": 0.85,
      "Kc end": 0.85,
      "Maximum Crop Height (h) (m)": 2
     },
     {
      "Crop": "Conifer Trees&nbsp;23",
-     "Column3": 1,
      "Kc mid": 1,
      "Kc end": 1,
      "Maximum Crop Height (h) (m)": 10
     },
     {
      "Crop": "Kiwi",
-     "Column3": 0.4,
+     "Kc ini": "0.70",
      "Kc mid": 1.05,
      "Kc end": 1.05,
      "Maximum Crop Height (h) (m)": 3
     },
     {
      "Crop": "Olives (40 to 60% ground coverage by canopy)&nbsp;24",
-     "Column3": 0.65,
+     "Kc ini": "0.65",
      "Kc mid": 0.7,
      "Kc end": 0.7,
      "Maximum Crop Height (h) (m)": "05-Mar"
     },
     {
      "Crop": "Pistachios, no ground cover",
-     "Column3": 0.4,
+     "Kc ini": "0.50",
      "Kc mid": 1.1,
      "Kc end": 0.45,
      "Maximum Crop Height (h) (m)": "05-Mar"
     },
     {
      "Crop": "Walnut Orchard&nbsp;19",
-     "Column3": 0.5,
      "Kc mid": 1.1,
      "Kc end": 0.6518,
      "Maximum Crop Height (h) (m)": "05-Apr"
     },
     {
-     "Crop": "o. Wetlands - temperate climate"
+     "Crop": "o. Wetlands - temperate climate",
+     "Kc ini": "0.75"
     },
     {
      "Crop": "Cattails, Bulrushes, killing frost",
-     "Column3": 0.3,
+     "Kc ini": "0.80",
      "Kc mid": 1.2,
      "Kc end": 0.3,
      "Maximum Crop Height (h) (m)": 2
     },
     {
      "Crop": "Cattails, Bulrushes, no frost",
-     "Column3": 0.6,
+     "Kc ini": "0.85",
      "Kc mid": 1.2,
      "Kc end": 0.6,
      "Maximum Crop Height (h) (m)": 2
     },
     {
      "Crop": "Short Veg., no frost",
-     "Column3": 1.05,
+     "Kc ini": 1,
      "Kc mid": 1.1,
      "Kc end": 1.1,
      "Maximum Crop Height (h) (m)": 0.3
     },
     {
      "Crop": "Reed Swamp, standing water",
-     "Column3": 1,
+     "Kc ini": 0.4,
      "Kc mid": 1.2,
      "Kc end": 1,
      "Maximum Crop Height (h) (m)": "03-Jan"
     },
     {
      "Crop": "Reed Swamp, moist soil",
-     "Column3": 0.9,
+     "Kc ini": 0.65,
      "Kc mid": 1.2,
      "Kc end": 0.7,
      "Maximum Crop Height (h) (m)": "03-Jan"
     },
     {
-     "Crop": "p. Special"
+     "Crop": "p. Special",
+     "Kc ini": 0.4
     },
     {
      "Crop": "Open Water, &lt; 2 m depth or in subhumid climates or tropics",
+     "Kc ini": 0.5,
      "Kc mid": 1.05,
      "Kc end": 1.05
     },
@@ -962,5 +1018,20 @@
      "Crop": "Open Water, &gt; 5 m depth, clear of turbidity, temperate climate",
      "Kc mid": 0.6525,
      "Kc end": 1.2525
+    },
+    {
+     "Kc ini": 0.3
+    },
+    {
+     "Kc ini": 0.6
+    },
+    {
+     "Kc ini": 1.05
+    },
+    {
+     "Kc ini": 1
+    },
+    {
+     "Kc ini": 0.9
     }
    ]
