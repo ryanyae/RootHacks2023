@@ -45,6 +45,7 @@ function calcTrueK(name, days){
     else if(days>inidays && days<=inidays+devdays){
         kval = kinfo.Kini - kinfo.Kmid
 
+
     }
     else if(days>inidays+devdays && days<=inidays+devdays+middays){
         kval = kinfo.Kmid
@@ -60,3 +61,4 @@ function calcTrueK(name, days){
 }
 
 module.exports = {calcTrueK}
+
