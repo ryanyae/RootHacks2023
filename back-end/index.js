@@ -16,6 +16,10 @@ app.use("/router", router)
 //   res.send(fs.readFileSync("../front-end/public/index.html", "utf8"));
 // });
 
+app.get('/plants', (req,res) =>{
+  res.send(fs.readFileSync("./Plant-Data/plant.html", "utf-8"));
+})
+
 app.listen(port, () => {
   console.log(`listening at http://localhost:${port}`);
 });
