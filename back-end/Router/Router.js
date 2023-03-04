@@ -4,4 +4,5 @@ const controller = require("../Controller/Controller")
 
 router.route("/calculate").get(controller.calc);
 
+
 module.exports = router;

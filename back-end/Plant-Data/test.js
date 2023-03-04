@@ -1,8 +1,10 @@
-function search(source, name) {
+function search(name) {
     var results = [];
     var index;
     var entry;
+    const jsonList = require("./growth")
 
+    const source = JSON.parse(jsonList)
     name = name.toUpperCase();
     for (index = 0; index < source.length; ++index) {
         entry = source[index];
@@ -13,3 +15,5 @@ function search(source, name) {
 
     return results;
 }
+
+module.exports = {search}

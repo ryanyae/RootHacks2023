@@ -1,9 +1,11 @@
 import React from "react";
+import { useEffect } from "react";
 import { Navbar } from "./Navbar";
 import { SideBar } from "./SideBar";
 import { Stack, styled, Box, Paper } from "@mui/material";
 import { Plot } from "./TopRow/Plot";
 import { PlantInfo } from "./TopRow/PlantInfo";
+import axios, * as others from 'axios';
 
 const MainContainer = styled(Stack)`
   background-color: black;
@@ -14,6 +16,17 @@ const MainContainer = styled(Stack)`
 `;
 
 export const Home = () => {
+
+  useEffect(() => {
+    apiCall();
+  }, [])
+
+  const apiCall = async () => {
+    const value = await axios.get("http://localhost:8888/router/calculate")
+    
+    console.log(value)
+  }
+
   return (
     <Stack>
       <Navbar />

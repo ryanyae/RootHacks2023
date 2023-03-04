@@ -1,4 +1,4 @@
-[
+const list = `[
     {
      "Crop": "a. Small Vegetables"
     },
@@ -1609,4 +1609,6 @@
      "Plant Date": "November",
      "Region": "frost-free climate"
     }
-   ]
+   ]`
+
+   module.export = list
