@@ -1,3 +1,4 @@
+
 function searchKtable(name) {
     
     const plantsKtable = [
@@ -9,6 +10,8 @@ function searchKtable(name) {
     ];
 
     const plantkinfo = plantsKtable.find(e => e.crop.toUpperCase() == name.toUpperCase());
+
+
 
     return plantkinfo
 }
