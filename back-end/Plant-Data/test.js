@@ -39,7 +39,7 @@ function calcTrueK(name, days){
     const middays = ginfo.mid
     const latedays = ginfo.late
     const totaldays = ginfo.total
-    if(0<days<=inidays){
+    if(0<days && days<=inidays){
         kval = kinfo.Kini
     }
     else if(days>inidays && days<=inidays+devdays){
