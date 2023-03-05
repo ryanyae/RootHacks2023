@@ -63,8 +63,10 @@ export const SideBar = () => {
     color: white;
 
     font-weight: bold;
-    font-size: 12px;
+    font-size: 15px;
     padding: 0;
+
+    text-transform: none;
 
     :hover {
       background-color: #b063ff;

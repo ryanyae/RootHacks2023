@@ -8,7 +8,7 @@ const MainContainer = styled(Paper)`
 `;
 
 const PlantInfoStack = styled(Stack)`
-  padding: 15px 30px;
+  padding: 15px 20px;
 `;
 
 const PlantInfoTitle = styled(Typography)`
@@ -25,18 +25,19 @@ const PlantTitle = styled(Typography)`
 `;
 
 const PlantName = styled(Typography)`
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 700;
   margin-top: 5px;
 `;
 
 const PlantDescription = styled(Typography)`
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 500;
+  padding-top: 5px;
 `;
 
 const PlantSpecialInfo = styled(Typography)`
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 500;
 `;
 
