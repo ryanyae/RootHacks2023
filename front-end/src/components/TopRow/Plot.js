@@ -13,9 +13,14 @@ import React, { useState } from "react";
 const PlotContainer = styled(Paper)`
   margin: 16px 0 0 16px;
   height: 100%;
+  border-radius: 30px;
 `;
 
-const PlotTitle = styled(Typography)``;
+const PlotTitle = styled(Typography)`
+  padding: 15px 30px;
+  font-size: 30px;
+  font-weight: 500;
+`;
 
 export const Plot = () => {
   const [plotSelect, setPlotSelect] = useState(1);
@@ -25,7 +30,7 @@ export const Plot = () => {
   };
 
   return (
-    <Stack sx={{ flexGrow: "1" }}>
+    <Stack sx={{ flexGrow: "2" }}>
       <PlotContainer>
         <Stack>
           <Stack direction="row" sx={{ justifyContent: "space-between" }}>

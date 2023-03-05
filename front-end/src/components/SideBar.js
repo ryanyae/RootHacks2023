@@ -152,6 +152,9 @@ export const SideBar = () => {
     background-color: white;
     border: 2px solid #000;
     boxshadow: 24;
+    padding: 0 15px;
+    border-radius: 15px;
+    padding-bottom: 15px;
   `;
 
   const [expand, setExpand] = useState(false);
@@ -190,6 +193,7 @@ export const SideBar = () => {
               <h2>Create New Plant</h2>
               <TextField placeholder="Plant Name" />
               <TextField placeholder="Description" />
+              <TextField placeholder="Plant Size" />
               <FormControl>
                 <Select defaultValue={1} onChange={handleChange}>
                   <MenuItem value={1}>Apple</MenuItem>
