@@ -54,6 +54,7 @@ export const SidebarModal = (props) => {
     location: false,
     temp: "",
     humidity: "",
+    type: "",
   };
 
   const handleName = (event) => {
@@ -79,6 +80,7 @@ export const SidebarModal = (props) => {
     plant.location = expand;
     plant.temp = temp;
     plant.humidity = humid;
+    plant.type = type;
 
     console.log(plant);
 
@@ -110,7 +112,7 @@ export const SidebarModal = (props) => {
         <TextField
           value={size}
           onChange={handleSize}
-          placeholder="Plant Size"
+          placeholder="Days since planted"
         />
         <FormControl>
           <Select onChange={handleSelect}>

@@ -56,7 +56,7 @@ export const PlantInfo = (props) => {
       <MainContainer>
         <PlantInfoStack>
           <PlantInfoTitle direction="row">
-            <PlantTitle>Plant Info</PlantTitle>
+            <PlantTitle>{plant.type}</PlantTitle>
           </PlantInfoTitle>
           <PlantName>{info.name}</PlantName>
           <PlantDescription>{info.description}</PlantDescription>
@@ -64,7 +64,10 @@ export const PlantInfo = (props) => {
           <Stack>
             <PlantSpecialInfo>Kc: </PlantSpecialInfo>
             <PlantSpecialInfo>ETo: </PlantSpecialInfo>
-            <PlantSpecialInfo>Location: </PlantSpecialInfo>
+            <PlantSpecialInfo>
+              Location:{" "}
+              {info ? (info.location ? "House Plant" : "Outside") : ""}
+            </PlantSpecialInfo>
           </Stack>
         </PlantInfoStack>
         {/* <Graph/> */}
