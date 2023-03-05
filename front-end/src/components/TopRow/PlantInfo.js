@@ -9,17 +9,25 @@ const MainContainer = styled(Paper)`
 
 const PlantInfoStack = styled(Stack)`
   padding: 15px 30px;
-  width: 300px;
+`;
+
+const PlantInfoTitle = styled(Typography)`
+  background-color: #9e3fff;
+  margin-right: auto;
+  border-radius: 20px;
+  color: white;
+  padding: 5px 10px;
 `;
 
 const PlantTitle = styled(Typography)`
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 700;
 `;
 
 const PlantName = styled(Typography)`
   font-size: 30px;
   font-weight: 700;
+  margin-top: 5px;
 `;
 
 const PlantDescription = styled(Typography)`
@@ -37,9 +45,9 @@ export const PlantInfo = () => {
     <Stack sx={{ flexGrow: "0.75", width: "300px" }}>
       <MainContainer>
         <PlantInfoStack>
-          <Stack direction="row">
+          <PlantInfoTitle direction="row">
             <PlantTitle>Plant Info</PlantTitle>
-          </Stack>
+          </PlantInfoTitle>
           <PlantName>Pineapple</PlantName>
           <PlantDescription>
             Lorem Ipsum is simply dummy text of the printing and typesetting

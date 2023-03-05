@@ -15,7 +15,6 @@ const PaperContainer = styled(Paper)`
 `;
 
 const WeatherInfoStack = styled(Stack)`
-  padding: 10px;
   align-items: center;
   height: 100%;
   justify-content: center;
@@ -23,9 +22,7 @@ const WeatherInfoStack = styled(Stack)`
 
 const WeatherInfoCity = styled(Typography)`
   font-size: 40px;
-  font-weight: 600;
   line-height: 50px;
-  padding: 10px 0;
 `;
 const WeatherInfoTemp = styled(Typography)`
   font-size: 70px;
@@ -54,16 +51,16 @@ const WeatherInfoFutureExtra = styled(Stack)`
 `;
 
 const WeatherInfoFutureExtraT = styled(Typography)`
-  font-size: 40px;
+  font-size: 30px;
 `;
 
 export const WeatherData = () => {
   const [currentTemp, setTemp] = useState("");
-  useEffect(async () => {
-    var temp = await axios.get("http://localhost:8888/router/getCurrentData");
-    console.log(temp.data);
-    setTemp(temp.data.temp);
-  }, []);
+  // useEffect(async () => {
+  //   var temp = await axios.get("http://localhost:8888/router/getCurrentData");
+  //   console.log(temp.data);
+  //   setTemp(temp.data.temp);
+  // }, []);
 
   // const apiCall = async () => {
   //   const value = await axios.get("http://localhost:8888/router/calculate");
