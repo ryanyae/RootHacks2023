@@ -18,15 +18,13 @@ const MainContainer = styled(Stack)`
 `;
 
 export const Home = () => {
-  useEffect(() => {
-    apiCall();
-  }, []);
+  // useEffect(() => {
+  //   apiCall();
+  // }, []);
 
-  const apiCall = async () => {
-    const value = await axios.get("http://localhost:8888/router/calculate");
-
-    // console.log(value)
-  };
+  // const apiCall = async () => {
+  //   const value = await axios.get("http://localhost:8888/router/calculate");
+  // };
 
   return (
     <Stack>

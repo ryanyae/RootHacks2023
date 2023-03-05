@@ -5,9 +5,9 @@ const port = 8888;
 const fs = require("fs");
 const bodyParser = require('body-parser')
 
-
 app.use(cors({origin: 'http://localhost:3000', credentials: true}));
 app.use(express.json());
+app.use(cors());
 
 const router = require("./Router/Router");
 app.use("/router", router)

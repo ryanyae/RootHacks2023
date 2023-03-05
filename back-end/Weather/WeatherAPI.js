@@ -1,15 +1,8 @@
 const axios = require('axios')
 const apiKey = "5d382ab21c274e5780a185652230403"
 
-async function getCurrentWeather(city, int) {
-    
-    // axios({
-    //     method:"get",
-    //     url:" http://api.weatherapi.com/v1/current.json",
-    //     data: {
-    //         key:apiKey
-    //     }
-    // })
+async function getAverage(city, int) {
+
     var result = await axios.get('http://api.weatherapi.com/v1/forecast.json', {
         params: {
             key: apiKey,
@@ -18,12 +11,19 @@ async function getCurrentWeather(city, int) {
         }
     })
     return (
-        // {
-        //     temp: result.data.current.temp_c,
-        //     humidity: result.data.current.humidity,
-        // }
         result.data.forecast.forecastday[0].day
     )
+}
+
+async function getCurrentWeather(city) {
+    var result = await axios.get('http://api.weatherapi.com/v1/current.json', {
+        params: {
+            key: apiKey,
+            q: city,
+        }
+    })
+
+    return result;
 }
 
 async function getAtmPressure(city) {
@@ -38,4 +38,4 @@ async function getAtmPressure(city) {
     )
 }
 
-module.exports = { getCurrentWeather, getAtmPressure }
+module.exports = { getAverage, getAtmPressure, getCurrentWeather }

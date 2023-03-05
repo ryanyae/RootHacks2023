@@ -1,5 +1,8 @@
 import { Stack, styled, Paper, Typography } from "@mui/material";
 import React from "react";
+import { useEffect, useState } from 'react'
+import axios, * as others from "axios";
+
 
 const MainContainer = styled(Stack)`
   flex: 1;
@@ -32,14 +35,28 @@ const WeatherInfoRH = styled(Typography)`
   padding: 10px 0;
 `;
 
+
 export const WeatherData = () => {
+
+  const [currentTemp, setTemp] = useState("")
+  useEffect(async () => {
+    var temp = await axios.get("http://localhost:8888/router/getCurrentData")
+    console.log(temp.data)
+    setTemp(temp.data.temp)
+  },[])
+
+  // const apiCall = async () => {
+  //   const value = await axios.get("http://localhost:8888/router/calculate");
+  //   console.log(value)
+  // };
+
   return (
     <MainContainer>
       <PaperContainer>
         <Stack direction="row" sx={{ height: "100%" }}>
           <WeatherInfoStack flexGrow={1}>
             <WeatherInfoCity>Vancouver</WeatherInfoCity>
-            <WeatherInfoTemp>20°</WeatherInfoTemp>
+            <WeatherInfoTemp>{currentTemp}°</WeatherInfoTemp>
             <WeatherInfoRH>RH: 9.8%</WeatherInfoRH>
           </WeatherInfoStack>
           <Stack flexGrow={1} direction="row">
