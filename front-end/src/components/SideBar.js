@@ -20,8 +20,9 @@ import {
   Checkbox,
 } from "@mui/material";
 import React, { useState } from "react";
+import { SidebarModal } from "./SidebarModal";
 
-export const SideBar = () => {
+export const SideBar = (props) => {
   const PlantListContainer = styled(Stack)`
     margin-top: 65.5px;
   `;
@@ -41,12 +42,6 @@ export const SideBar = () => {
     justify-content: center;
     z-index: 1;
   `;
-
-  const mainButtons = [
-    [0, "Home"],
-    [1, "Shorts"],
-    [2, "Subscriptions"],
-  ];
 
   const SidebarTitle = styled(Typography)`
     font-weight: bold;
@@ -135,35 +130,18 @@ export const SideBar = () => {
     }
   `;
 
-  const [plant, setPlant] = useState(0);
+  const [plant, setPlant] = useState("");
 
   const handleChange = (event, value) => {
     setPlant(value);
+    setDisplay(value);
   };
 
   const [modal, setModal] = useState(false);
 
-  const AddPlantModal = styled(Modal)``;
+  const { setDisplay, plants } = props;
 
-  const ModalContainer = styled(Stack)`
-    position: absolute;
-    top: 30%;
-    left: 37%;
-    transform: 50%;
-    width: 400px;
-    background-color: white;
-    border: 2px solid #000;
-    boxshadow: 24;
-    padding: 0 15px;
-    border-radius: 15px;
-    padding-bottom: 15px;
-  `;
-
-  const [expand, setExpand] = useState(false);
-
-  const handleChecked = (event) => {
-    setExpand(event.target.checked);
-  };
+  var num = 0;
 
   return (
     <SidebarDrawer variant="permanent">
@@ -180,8 +158,8 @@ export const SideBar = () => {
               value={plant}
               orientation="vertical"
             >
-              {mainButtons.map((icon) => {
-                return <PlantButtons value={icon[0]}>hi</PlantButtons>;
+              {plants.map((plant) => {
+                return <PlantButtons value={num++}>{plant.name}</PlantButtons>;
               })}
             </ToggleButtonGroup>
           </PlantListContainer>
@@ -190,35 +168,7 @@ export const SideBar = () => {
           >
             <AddButton onClick={() => setModal(true)}>New Plant</AddButton>
           </SidebarFixed>
-          <AddPlantModal open={modal} onClose={() => setModal(false)}>
-            <ModalContainer>
-              <h2>Create New Plant</h2>
-              <TextField placeholder="Plant Name" />
-              <TextField placeholder="Description" />
-              <TextField placeholder="Plant Size" />
-              <FormControl>
-                <Select defaultValue={1} onChange={handleChange}>
-                  <MenuItem value={1}>Apple</MenuItem>
-                  <MenuItem value={2}>Orange</MenuItem>
-                  <MenuItem value={3}>Grape</MenuItem>
-                </Select>
-              </FormControl>
-              <FormGroup sx={{ paddingLeft: "5px" }}>
-                <FormControlLabel
-                  control={
-                    <Checkbox checked={expand} onChange={handleChecked} />
-                  }
-                  label="House Plant"
-                />
-              </FormGroup>
-              <Collapse in={expand} timeout="auto">
-                <Stack>
-                  <TextField placeholder="Temperature" />
-                  <TextField placeholder="Humidity" />
-                </Stack>
-              </Collapse>
-            </ModalContainer>
-          </AddPlantModal>
+          <SidebarModal modal={modal} setModal={setModal} plants={plants} />
         </InnerSidebarContainer>
       </SidebarContainer>
     </SidebarDrawer>

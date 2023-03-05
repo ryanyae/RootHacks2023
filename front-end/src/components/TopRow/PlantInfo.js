@@ -1,5 +1,5 @@
 import { Typography, Stack, Paper, styled } from "@mui/material";
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const MainContainer = styled(Paper)`
   margin: 16px 16px 0 0;
@@ -41,7 +41,17 @@ const PlantSpecialInfo = styled(Typography)`
   font-weight: 500;
 `;
 
-export const PlantInfo = () => {
+export const PlantInfo = (props) => {
+  const { plant } = props;
+
+  const [info, setInfo] = useState("");
+
+  useEffect(() => {
+    if (plant != null) {
+      setInfo(plant);
+    }
+  }, [plant]);
+
   return (
     <Stack sx={{ flexGrow: "0.75", width: "300px" }}>
       <MainContainer>
@@ -49,13 +59,8 @@ export const PlantInfo = () => {
           <PlantInfoTitle direction="row">
             <PlantTitle>Plant Info</PlantTitle>
           </PlantInfoTitle>
-          <PlantName>Pineapple</PlantName>
-          <PlantDescription>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-          </PlantDescription>
+          <PlantName>{info.name}</PlantName>
+          <PlantDescription>{info.description}</PlantDescription>
           <p></p>
           <Stack>
             <PlantSpecialInfo>Kc: </PlantSpecialInfo>
