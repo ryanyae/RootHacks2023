@@ -7,10 +7,9 @@ import {
   FormControl,
   InputLabel,
   Select,
+  Button
 } from "@mui/material";
 import React, { useState } from "react";
-
-
 
 
 import {
@@ -58,6 +57,24 @@ export const options = {
 };
 
 const labels = ['2023-03-04', '2023-03-05', '2023-03-06', '2023-03-07', '2023-03-08', '2023-03-09', '2023-03-10', '2023-03-11', '2023-03-12','2023-03-13','2023-03-14'];
+const weatherData = [
+  { avgTemp: 4.6, avgHumid: 77 },
+  { avgTemp: 4.25, avgHumid: 76 },
+  { avgTemp: 2.85, avgHumid: 84 },
+  { avgTemp: 4.1, avgHumid: 75 },
+  { avgTemp: 2.95, avgHumid: 86 },
+  { avgTemp: 3.8, avgHumid: 73 },
+  { avgTemp: 4.6499999999999995, avgHumid: 74 },
+  { avgTemp: 5.35, avgHumid: 74 },
+  { avgTemp: 7.85, avgHumid: 76 },
+  { avgTemp: 7.75, avgHumid: 78 },
+  { avgTemp: 6.45, avgHumid: 88 },
+  { avgTemp: 7.25, avgHumid: 86 },
+  { avgTemp: 8.05, avgHumid: 93 },
+  { avgTemp: 8.1, avgHumid: 97 }
+]
+
+/* CALL FUNCTION TO GET CURRENT KC */
 
 export const data = {
   labels,
@@ -72,11 +89,7 @@ export const data = {
 };
 
 
-
-
-
-
-
+const UpdateButton = styled(Button)``;
 
 
 
@@ -97,11 +110,13 @@ height: 400px;
 `;
 
 export const Plot = () => {
+
   const [plotSelect, setPlotSelect] = useState(1);
 
   const handleChange = (event, value) => {
     setPlotSelect(value);
   };
+
 
   return (
     <Stack sx={{ flexGrow: "2" }}>
@@ -120,6 +135,7 @@ export const Plot = () => {
           </Stack>
           <CustomWrapper sx={{paddingLeft: "20px"}}>
             <Line options={options} data={data} />
+            <UpdateButton onClick={() => console.log('yes')}>Update</UpdateButton>
           </CustomWrapper>
           
         </Stack>
