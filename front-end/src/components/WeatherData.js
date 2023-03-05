@@ -39,11 +39,19 @@ const WeatherInfoRH = styled(Typography)`
 export const WeatherData = () => {
 
   const [currentTemp, setTemp] = useState("")
-  useEffect(async () => {
+  useEffect( () => {
+    doStuff()
+    getForecast()
+  }, [])
+
+  async function doStuff() {
     var temp = await axios.get("http://localhost:8888/router/getCurrentData")
-    console.log(temp.data)
     setTemp(temp.data.temp)
-  },[])
+  }
+
+  async function getForecast() {
+    var forecast = await axios.get("http://localhost:8888/router/getForecast")
+  }
 
   // const apiCall = async () => {
   //   const value = await axios.get("http://localhost:8888/router/calculate");

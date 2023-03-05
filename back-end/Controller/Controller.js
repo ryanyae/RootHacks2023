@@ -1,5 +1,5 @@
 
-const { getAverage, getAtmPressure, getCurrentWeather } = require("../Weather/WeatherAPI.js")
+const { getAverage, getAtmPressure, getCurrentWeather, getForecast } = require("../Weather/WeatherAPI.js")
 const { calcTrueK } = require("../Plant-Data/test");
 const { json } = require("body-parser");
 
@@ -32,5 +32,14 @@ module.exports = {// Have API calls from Plant Data and Weather API
         // console.log(result.data.current.temp_c)
         // return result.data.current.temp_c;
         res.status(200).json({temp:result.data.current.temp_c})
+    },
+
+    getForecast: async (req, res) => {
+        var weatherData = await getForecast("Vancouver", 3);
+
+        console.log(weatherData.forecastday[0])
+        // console.log(weatherData.day[1])
+        // console.log(weatherData.day[2])
+
     }
 }

@@ -26,6 +26,18 @@ async function getCurrentWeather(city) {
     return result;
 }
 
+async function getForecast(city, int) {
+    var result = await axios.get('http://api.weatherapi.com/v1/forecast.json', {
+        params: {
+            key: apiKey,
+            q: city,
+            day: int
+        }
+    })
+
+    return result.data.forecast;
+}
+
 async function getAtmPressure(city) {
     var result = await axios.get('http://api.weatherapi.com/v1/current.json', {
         params: {
@@ -38,4 +50,4 @@ async function getAtmPressure(city) {
     )
 }
 
-module.exports = { getAverage, getAtmPressure, getCurrentWeather }
+module.exports = { getAverage, getAtmPressure, getCurrentWeather, getForecast }
