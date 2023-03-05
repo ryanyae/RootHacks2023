@@ -114,9 +114,11 @@ export const SidebarModal = (props) => {
         />
         <FormControl>
           <Select onChange={handleSelect}>
-            <MenuItem value="Apple">Apple</MenuItem>
-            <MenuItem value="Orange">Orange</MenuItem>
-            <MenuItem value="Grape">Grape</MenuItem>
+            <MenuItem value="Broccoli">Broccoli</MenuItem>
+            <MenuItem value="Potato">Potato</MenuItem>
+            <MenuItem value="Corn">Corn</MenuItem>
+            <MenuItem value="Zucchini">Zucchini</MenuItem>
+            <MenuItem value="Pineapple">Pineapple</MenuItem>
           </Select>
         </FormControl>
         <FormGroup sx={{ paddingLeft: "5px" }}>

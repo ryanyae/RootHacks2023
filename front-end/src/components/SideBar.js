@@ -128,7 +128,7 @@ export const SideBar = (props) => {
     }
   `;
 
-  const [plant, setPlant] = useState(0);
+  const [plant, setPlant] = useState("");
 
   const handleChange = (event, value) => {
     setPlant(value);
@@ -136,28 +136,6 @@ export const SideBar = (props) => {
   };
 
   const [modal, setModal] = useState(false);
-
-  const AddPlantModal = styled(Modal)``;
-
-  const ModalContainer = styled(Stack)`
-    position: absolute;
-    top: 30%;
-    left: 37%;
-    transform: 50%;
-    width: 400px;
-    background-color: white;
-    border: 2px solid #000;
-    boxshadow: 24;
-    padding: 0 15px;
-    border-radius: 15px;
-    padding-bottom: 15px;
-  `;
-
-  const [expand, setExpand] = useState(false);
-
-  const handleChecked = (event) => {
-    setExpand(event.target.checked);
-  };
 
   const { setDisplay, plants } = props;
 
@@ -178,8 +156,8 @@ export const SideBar = (props) => {
               value={plant}
               orientation="vertical"
             >
-              {plants.map(() => {
-                return <PlantButtons value={num++}>hi</PlantButtons>;
+              {plants.map((plant) => {
+                return <PlantButtons value={num++}>{plant.name}</PlantButtons>;
               })}
             </ToggleButtonGroup>
           </PlantListContainer>
