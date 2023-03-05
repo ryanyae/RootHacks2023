@@ -1,5 +1,5 @@
 import { Typography, Stack, Paper, styled } from "@mui/material";
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const MainContainer = styled(Paper)`
   margin: 16px 16px 0 0;
@@ -40,13 +40,23 @@ const PlantSpecialInfo = styled(Typography)`
   font-weight: 500;
 `;
 
-export const PlantInfo = () => {
+export const PlantInfo = (props) => {
+  const { plant } = props;
+
+  const [info, setInfo] = useState("");
+
+  useEffect(() => {
+    if (plant != null) {
+      setInfo(plant);
+    }
+  }, [plant]);
+
   return (
     <Stack sx={{ flexGrow: "0.75", width: "300px" }}>
       <MainContainer>
         <PlantInfoStack>
           <PlantInfoTitle direction="row">
-            <PlantTitle>Plant Info</PlantTitle>
+            <PlantTitle>{info.name}</PlantTitle>
           </PlantInfoTitle>
           <PlantName>Pineapple</PlantName>
           <PlantDescription>

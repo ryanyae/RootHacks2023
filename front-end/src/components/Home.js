@@ -51,7 +51,7 @@ export const Home = () => {
         <MainContainer spacing={2}>
           <Stack direction="row" spacing={2} sx={{ flexGrow: "1.25" }}>
             <Plot />
-            <PlantInfo />
+            <PlantInfo plant={plants[display]} />
           </Stack>
           <Stack sx={{ flexGrow: "0.75" }}>
             <WeatherData />
