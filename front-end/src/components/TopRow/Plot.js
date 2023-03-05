@@ -11,14 +11,14 @@ import {
 import React, { useState } from "react";
 
 const PlotContainer = styled(Paper)`
-  margin: 12px;
-  height: 200px;
+  margin: 16px 0 0 16px;
+  height: 100%;
 `;
 
 const PlotTitle = styled(Typography)``;
 
 export const Plot = () => {
-  const [plotSelect, setPlotSelect] = useState("");
+  const [plotSelect, setPlotSelect] = useState(1);
 
   const handleChange = (event, value) => {
     setPlotSelect(value);
@@ -30,9 +30,9 @@ export const Plot = () => {
         <Stack>
           <Stack direction="row" sx={{ justifyContent: "space-between" }}>
             <PlotTitle>Plot Title</PlotTitle>
-            <FormControl>
+            <FormControl sx={{ width: "120px" }}>
               <InputLabel id="plot-selector">Plot</InputLabel>
-              <Select onChange={handleChange}>
+              <Select defaultValue={1} label="plot" onChange={handleChange}>
                 <MenuItem value={1}>Apple</MenuItem>
                 <MenuItem value={2}>Orange</MenuItem>
                 <MenuItem value={3}>Grape</MenuItem>
