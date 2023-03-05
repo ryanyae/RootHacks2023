@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useEffect } from "react";
 import { Navbar } from "./Navbar";
 import { SideBar } from "./SideBar";
@@ -24,6 +24,8 @@ const MainContainer = styled(Stack)`
   box-sizing: border-box;
 `;
 
+var plants = [];
+
 export const Home = () => {
   // useEffect(() => {
   //   apiCall();
@@ -39,11 +41,13 @@ export const Home = () => {
     },
   });
 
+  const [display, setDisplay] = useState(0);
+
   return (
     <ThemeProvider theme={theme}>
       <Stack>
         <Navbar />
-        <SideBar />
+        <SideBar setDisplay={setDisplay} plants={plants} />
         <MainContainer spacing={2}>
           <Stack direction="row" spacing={2} sx={{ flexGrow: "1.25" }}>
             <Plot />
