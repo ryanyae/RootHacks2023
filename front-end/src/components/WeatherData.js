@@ -114,3 +114,4 @@ const WeatherInfoLabel = styled(Typography)`
     </MainContainer>
   );
 };
+
