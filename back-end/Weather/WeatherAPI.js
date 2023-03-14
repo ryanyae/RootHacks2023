@@ -1,5 +1,5 @@
 const axios = require('axios')
-const apiKey = "5d382ab21c274e5780a185652230403"
+const {apiKey} = require("../config/env.json")
 
 async function getAverage(city, int) {
 

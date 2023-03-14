@@ -53,14 +53,19 @@ const WeatherInfoFutureExtraT = styled(Typography)`
 export const WeatherData = () => {
 
   const [currentTemp, setTemp] = useState("")
+  const [curerntWind, setwind] = useState("")
+  const [currentPrecip, setPrecip] = useState("")
   useEffect( () => {
     doStuff()
-    getForecast()
+    // getForecast()
   }, [])
 
   async function doStuff() {
     var temp = await axios.get("http://localhost:8888/router/getCurrentData")
-    setTemp(temp.data.temp)
+    console.log(temp.data)
+    // setTemp(temp.data.temp)
+    // setWind(temp.data.wind)
+    // setPrecip(temp.data.precip)
   }
 
   async function getForecast() {
@@ -102,7 +107,7 @@ const WeatherInfoLabel = styled(Typography)`
               justifyContent="space-around"
               sx={{ width: "100%", padding: "0 80px", boxSizing: "border-box" }}
             >
-              <WeatherInfoTemp>20°</WeatherInfoTemp>
+              <WeatherInfoTemp>{currentTemp}°</WeatherInfoTemp>
               <Stack justifyContent="center" sx={{ width: "62px" }}>
                 <CloudIcon sx={{ transform: "scale(3)" }} />
               </Stack>

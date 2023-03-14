@@ -11,7 +11,7 @@ app.use(cors());
 
 const router = require("./Router/Router");
 app.use("/router", router)
-app.use(bodyParser.json())
+// app.use(bodyParser.json())
 
 
 // app.get('/', (req, res) => {

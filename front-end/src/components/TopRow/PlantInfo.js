@@ -44,7 +44,7 @@ const PlantSpecialInfo = styled(Typography)`
 export const PlantInfo = (props) => {
   const { plant } = props;
 
-  const [info, setInfo] = useState("");
+  const [info, setInfo] = useState(" ");
 
   useEffect(() => {
     if (plant != null) {
@@ -57,7 +57,7 @@ export const PlantInfo = (props) => {
       <MainContainer>
         <PlantInfoStack>
           <PlantInfoTitle direction="row">
-            <PlantTitle>{plant.type}</PlantTitle>
+            <PlantTitle>{info.type}</PlantTitle>
           </PlantInfoTitle>
           <PlantName>{info.name}</PlantName>
           <PlantDescription>{info.description}</PlantDescription>

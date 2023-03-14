@@ -31,13 +31,13 @@ module.exports = {// Have API calls from Plant Data and Weather API
         var result = await getCurrentWeather("Vancouver");
         // console.log(result.data.current.temp_c)
         // return result.data.current.temp_c;
-        res.status(200).json({temp:result.data.current.temp_c})
+        // res.status(200).json({temp:result.data.current.temp_c, wind:result.data.current.wind_kph, precip:result.data.current.precip_mm})
     },
 
     getForecast: async (req, res) => {
         var weatherData = await getForecast("Vancouver", 3);
 
-        console.log(weatherData.forecastday[0])
+        // console.log(weatherData.forecastday[0])
         // console.log(weatherData.day[1])
         // console.log(weatherData.day[2])
 
