@@ -63,8 +63,8 @@ export const PlantInfo = (props) => {
           <PlantDescription>{info.description}</PlantDescription>
           <p></p>
           <Stack>
-            <PlantSpecialInfo>Kc: </PlantSpecialInfo>
-            <PlantSpecialInfo>ETo: </PlantSpecialInfo>
+            <PlantSpecialInfo>Kc: {props.calc.kc}</PlantSpecialInfo>
+            <PlantSpecialInfo>ETo: {props.calc.Eto}</PlantSpecialInfo>
             <PlantSpecialInfo>
               Location:{" "}
               {info ? (info.location ? "House Plant" : "Outside") : ""}

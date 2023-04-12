@@ -9,11 +9,10 @@ module.exports = {// Have API calls from Plant Data and Weather API
     calc: async (req, res) => {
 
         // const value = searchKtable("pineapple")
-        // console.log(value)
-        // res.status(200).json({ title: "hello"})
         var weatherData = await getAverage("Vancouver", 1);
         var atmPressure = await getAtmPressure("Vancouver");
-        var trueK = calcTrueK("Zucchini", 10);
+        // console.log(req.body)
+        var trueK = calcTrueK(req.body.type, req.body.size);
 
         var es = (0.6108 * (Math.pow(Math.E, ((17.27 * weatherData.avgtemp_c) / (weatherData.avgtemp_c + 237.3)))))
         var delta = (4098 * es) / (Math.pow((weatherData.avgtemp_c + 237.3), 2))
@@ -23,13 +22,22 @@ module.exports = {// Have API calls from Plant Data and Weather API
         );
         var evoNum = (0.0588 * (A) * Math.sqrt(weatherData.avgtemp_c) * ((weatherData.avghumidity / 2) + 2.7))
         var finalNum = (trueK.kval * evoNum * 1)
-        // console.log(finalNum)
-        return (finalNum)
+        console.log(finalNum + "L")
+        return (res.status(200).json({
+            ko: finalNum,
+            Eto: evoNum
+        }))
     },
 
     weatherData: async (req, res) => {
-        var result = await getCurrentWeather("Vancouver");
-        // console.log(result.data.current.temp_c)
+        var currentWeather = await getCurrentWeather("Vancouver");
+        var forecast = await getAverage("Vancouver", 1);
+        return (res.status(200).json({
+            temp: currentWeather.data.current.temp_c,
+            wind: currentWeather.data.current.wind_kph,
+            precip: currentWeather.data.current.precip_mm,
+            humid: forecast.avghumidity
+        }))
         // return result.data.current.temp_c;
         // res.status(200).json({temp:result.data.current.temp_c, wind:result.data.current.wind_kph, precip:result.data.current.precip_mm})
     },

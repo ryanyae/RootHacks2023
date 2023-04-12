@@ -26,14 +26,19 @@ const MainContainer = styled(Stack)`
 
 var plants = [];
 
-export const Home = () => {
-  // useEffect(() => {
-  //   apiCall();
-  // }, []);
 
-  // const apiCall = async () => {
-  //   const value = await axios.get("http://localhost:8888/router/calculate");
-  // };
+export const Home = () => {
+  const [display, setDisplay] = useState(0);
+
+  const [calc, setCalc] = useState({
+    kc:"...",
+    Eto:"..."
+  })
+
+  useEffect(() => {
+    console.log(calc)
+  }, [calc]);
+
 
   const theme = createTheme({
     typography: {
@@ -41,17 +46,16 @@ export const Home = () => {
     },
   });
 
-  const [display, setDisplay] = useState(0);
 
   return (
     <ThemeProvider theme={theme}>
       <Stack>
         <Navbar />
-        <SideBar setDisplay={setDisplay} plants={plants} />
+        <SideBar setDisplay={setDisplay} plants={plants} setCalc={setCalc}/>
         <MainContainer spacing={2}>
           <Stack direction="row" spacing={2} sx={{ flexGrow: "1.25" }}>
             <Plot />
-            <PlantInfo plant={plants[display]} />
+            <PlantInfo plant={plants[display]} calc={calc}/>
           </Stack>
           <Stack sx={{ flexGrow: "0.75" }}>
             <WeatherData />

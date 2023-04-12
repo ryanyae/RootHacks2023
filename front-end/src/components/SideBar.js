@@ -21,6 +21,7 @@ import {
 } from "@mui/material";
 import React, { useState } from "react";
 import { SidebarModal } from "./SidebarModal";
+import axios, * as others from "axios";
 
 export const SideBar = (props) => {
   const PlantListContainer = styled(Stack)`
@@ -132,14 +133,36 @@ export const SideBar = (props) => {
 
   const [plant, setPlant] = useState("");
 
+  const { setDisplay, plants} = props;
+  const [modal, setModal] = useState(false);
+
   const handleChange = (event, value) => {
     setPlant(value);
     setDisplay(value);
+    // setCalc(plants.value)
+    const size = plants[value].size
+    const type = plants[value].type.props.value
+    const finalVal = apiCall(size, type);
+    console.log(finalVal.data + "")
+
+    const ko = finalVal.data.ko
+    const Eto = finalVal.data.Eto
+
+    props.setCalc({
+      ko: ko,
+      Eto: Eto
+    })
   };
 
-  const [modal, setModal] = useState(false);
+  const apiCall = async (size, type) => {
+    const formData = {
+      size: size,
+      type: type
+    }
+    const calc = await axios.post("http://localhost:8888/router/calculate", formData);
 
-  const { setDisplay, plants } = props;
+    console.log(calc)
+  };
 
   var num = 0;
 
